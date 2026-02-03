@@ -1,4 +1,4 @@
-// public/js/travel-map.js
+// public/js/travel.js
 
 // Initialize map with better settings
 const map = L.map('map', {

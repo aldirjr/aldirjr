@@ -5,93 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Adventures - Junior's World</title>
     
+     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Leaflet CSS for map -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     
-    <style>
-        :root {
-            --primary: #2c3e50;
-            --secondary: #e74c3c;
-            --accent: #3498db;
-            --light: #ecf0f1;
-            --dark: #1a252f;
-        }
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: var(--primary);
-            padding-top: 80px;
-        }
-        
-        .navbar {
-            background: rgba(26, 37, 47, 0.95) !important;
-            backdrop-filter: blur(10px);
-            padding: 1rem 0;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-        }
-        
-        .navbar-brand {
-            font-weight: 800;
-            font-size: 1.5rem;
-            color: white !important;
-        }
-        
-        .navbar-brand span { color: var(--secondary); }
-        
-        .nav-link {
-            color: rgba(255,255,255,0.85) !important;
-            font-weight: 600;
-            margin: 0 0.5rem;
-            padding: 0.5rem 1rem !important;
-            transition: all 0.3s ease;
-            border-radius: 8px;
-        }
-        
-        .nav-link:hover {
-            color: white !important;
-            background: rgba(255,255,255,0.1);
-        }
-        
-        .nav-link.active {
-            background: var(--secondary) !important;
-            color: white !important;
-        }
-        
-        .page-header {
-            background: linear-gradient(135deg, var(--secondary), #c0392b);
-            padding: 4rem 0 3rem;
-            color: white;
-            text-align: center;
-        }
-        
-        .page-header h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-        }
-        
-        #map {
-            height: 600px;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-            margin: 2rem 0;
-        }
-        
-        .map-section {
-            padding: 4rem 0;
-            background: var(--light);
-        }
-        
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-        }
-    </style>
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="css/travel.css">
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -102,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="professional.html">Professional</a></li>
                     <li class="nav-item"><a class="nav-link active" href="travel.html">Travel</a></li>
                     <li class="nav-item"><a class="nav-link" href="personal.html">Personal</a></li>
@@ -130,9 +61,33 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="footer-social mb-3">
+                <a href="https://instagram.com/juniorsfantasticworld" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/aldirjr" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/aldirjr" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" id="email-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Junior's World. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="js/travel-map.js"></script>
+
+    <!-- i18n (optional) -->
     <script src="js/i18n.js"></script>
+    
+    <!-- Leaflet JS for map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Page specific JS -->
+    <script src="js/travel.js"></script>
+    
 </body>
 </html>

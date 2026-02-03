@@ -5,49 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Sitting - Junior's World</title>
     
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <style>
-        :root {
-            --primary: #2c3e50;
-            --secondary: #27ae60;
-            --light: #ecf0f1;
-            --dark: #1a252f;
-        }
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            padding-top: 80px;
-        }
-        
-        .navbar {
-            background: rgba(26, 37, 47, 0.95) !important;
-            backdrop-filter: blur(10px);
-            padding: 1rem 0;
-        }
-        
-        .nav-link.active {
-            background: var(--secondary) !important;
-        }
-        
-        .page-header {
-            background: linear-gradient(135deg, var(--secondary), #229954);
-            padding: 4rem 0 3rem;
-            color: white;
-            text-align: center;
-        }
-        
-        .page-header h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-        }
-        
-        #calendar-container {
-            padding: 2rem 0;
-        }
-    </style>
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="css/petsitting.css">
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -58,7 +30,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="professional.html">Professional</a></li>
                     <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
                     <li class="nav-item"><a class="nav-link" href="personal.html">Personal</a></li>
@@ -73,15 +45,309 @@
         <p>Professional care for your furry friends</p>
     </div>
 
-    <section style="padding: 4rem 0;">
+    <!-- Services Section -->
+    <section class="services-section">
         <div class="container">
-            <h2 class="text-center mb-4">Availability Calendar</h2>
-            <div id="calendar-container"></div>
+            <div class="text-center">
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">Tailored care for every pet</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="service-title">Home Visits</h3>
+                        <p class="service-description">
+                            I'll visit your home to feed, play with, and care for your pets while you're away.
+                        </p>
+                        <ul class="service-features">
+                            <li>Feeding & fresh water</li>
+                            <li>Playtime & exercise</li>
+                            <li>Litter box maintenance</li>
+                            <li>Photo updates</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3 class="service-title">Overnight Stays</h3>
+                        <p class="service-description">
+                            24/7 care and companionship for your pets in the comfort of their own home.
+                        </p>
+                        <ul class="service-features">
+                            <li>Sleep at your home</li>
+                            <li>Multiple daily activities</li>
+                            <li>Home security presence</li>
+                            <li>Daily video updates</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <h3 class="service-title">Dog Walking</h3>
+                        <p class="service-description">
+                            Regular walks to keep your dog happy, healthy, and well-exercised.
+                        </p>
+                        <ul class="service-features">
+                            <li>30-60 minute walks</li>
+                            <li>Exercise & socialization</li>
+                            <li>Multiple dogs welcome</li>
+                            <li>Flexible scheduling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Pricing</h2>
+                <p class="section-subtitle">Transparent and competitive rates</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Home Visit</h3>
+                    <div class="pricing-price">$25</div>
+                    <div class="pricing-period">per visit (30 min)</div>
+                    <ul class="service-features">
+                        <li>Feeding & water</li>
+                        <li>Playtime</li>
+                        <li>Litter box cleaning</li>
+                        <li>Photo updates</li>
+                    </ul>
+                    <button class="btn btn-submit" onclick="scrollToContact()">Book Now</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3 class="pricing-title">Overnight Stay</h3>
+                    <div class="pricing-price">$75</div>
+                    <div class="pricing-period">per night</div>
+                    <ul class="service-features">
+                        <li>24/7 care</li>
+                        <li>Multiple activities</li>
+                        <li>Home security</li>
+                        <li>Daily video updates</li>
+                    </ul>
+                    <button class="btn btn-submit" onclick="scrollToContact()">Book Now</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Dog Walking</h3>
+                    <div class="pricing-price">$20</div>
+                    <div class="pricing-period">per walk (30 min)</div>
+                    <ul class="service-features">
+                        <li>30-60 minute walks</li>
+                        <li>Exercise & play</li>
+                        <li>Flexible times</li>
+                        <li>Multiple dogs OK</li>
+                    </ul>
+                    <button class="btn btn-submit" onclick="scrollToContact()">Book Now</button>
+                </div>
+            </div>
+            
+            <div class="alert alert-success mt-4 text-center">
+                <i class="fas fa-percentage me-2"></i>
+                <strong>Special Offer:</strong> 10% discount for bookings of 7+ days!
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section class="calendar-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Availability Calendar</h2>
+                <p class="section-subtitle">Check when I'm available</p>
+            </div>
+            
+            <div class="calendar-container" id="calendar-container">
+                <div class="calendar-header" >
+                    <button class="calendar-nav" onclick="previousMonth()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <h3 id="currentMonth">February 2026</h3>
+                    <button class="calendar-nav" onclick="nextMonth()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="calendar-grid">
+                    <div class="calendar-day-header">Sun</div>
+                    <div class="calendar-day-header">Mon</div>
+                    <div class="calendar-day-header">Tue</div>
+                    <div class="calendar-day-header">Wed</div>
+                    <div class="calendar-day-header">Thu</div>
+                    <div class="calendar-day-header">Fri</div>
+                    <div class="calendar-day-header">Sat</div>
+                    
+                    <!-- Calendar days will be generated here -->
+                    <div id="calendarDays"></div>
+                </div>
+                
+                <div class="calendar-legend">
+                    <div class="legend-item">
+                        <div class="legend-box" style="background: #e8f5e9;"></div>
+                        <span>Available</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-box" style="background: #ffebee;"></div>
+                        <span>Booked</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-box" style="border: 2px solid var(--secondary);"></div>
+                        <span>Today</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alert alert-info mt-4 text-center">
+                <i class="fas fa-info-circle me-2"></i>
+                <strong>Integration Tip:</strong> You can manage this calendar using Google Calendar API or Firebase Realtime Database
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Book Your Pet Care</h2>
+                <p class="section-subtitle">Fill out the form and I'll get back to you within 24 hours</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <form id="bookingForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Your Name *</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Email *</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Service Type *</label>
+                                    <select class="form-control" required>
+                                        <option value="">Select a service</option>
+                                        <option>Home Visit</option>
+                                        <option>Overnight Stay</option>
+                                        <option>Dog Walking</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Start Date *</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">End Date *</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Pet Information *</label>
+                                <textarea class="form-control" rows="3" placeholder="Tell me about your pet(s): name, breed, age, special needs..." required></textarea>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="form-label">Additional Notes</label>
+                                <textarea class="form-control" rows="3" placeholder="Any special instructions or concerns?"></textarea>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn-submit">
+                                    <i class="fas fa-paper-plane me-2"></i>Submit Booking Request
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms & Conditions -->
+    <section class="terms-section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="section-title">Terms & Conditions</h2>
+            </div>
+            
+            <div class="terms-card">
+                <h4>Booking & Cancellation Policy</h4>
+                <p>All bookings must be confirmed at least 48 hours in advance. Cancellations made less than 24 hours before the scheduled service will be charged 50% of the service fee.</p>
+                
+                <h4 class="mt-4">Payment Terms</h4>
+                <p>Payment is due at the time of service or can be made via bank transfer. I accept cash, Venmo, PayPal, and all major credit cards.</p>
+                
+                <h4 class="mt-4">Pet Requirements</h4>
+                <p>All pets must be up-to-date on vaccinations and flea/tick prevention. Aggressive animals must be disclosed during booking. I reserve the right to refuse service if safety is a concern.</p>
+                
+                <h4 class="mt-4">Home Access</h4>
+                <p>You must provide safe and reliable access to your home (key, code, etc.). I will treat your home with respect and ensure all doors and windows are secured.</p>
+                
+                <h4 class="mt-4">Emergency Care</h4>
+                <p>In case of a pet emergency, I will contact you immediately and, if necessary, take your pet to the nearest veterinary clinic. You are responsible for all veterinary costs.</p>
+                
+                <h4 class="mt-4">Insurance & Liability</h4>
+                <p>I am insured and bonded for pet sitting services. However, I am not liable for pre-existing health conditions or unforeseeable pet behavior.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="footer-social mb-3">
+                <a href="https://instagram.com/juniorsfantasticworld" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/aldirjr" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/aldirjr" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" id="email-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Junior's World. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/calendar.js"></script>
+    
+    <!-- i18n (optional) -->
     <script src="js/i18n.js"></script>
+
+    <!-- Calendar JS -->
+    <script src="js/calendar.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
 </body>
 </html>
