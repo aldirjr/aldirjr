@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Home",
+    "professional": "Professional",
+    "travel": "Travel",
+    "personal": "Personal",
+    "petsitting": "Pet Sitting"
+  },
+  "home": {
+    "welcome": "Welcome to My World",
+    "subtitle": "Developer • Traveler • Board Game Enthusiast • Pet Sitter"
+  },
+  "professional": {
+    "title": "Professional Portfolio",
+    "subtitle": "Data Analyst & Web Developer",
+    "downloadCV": "Download CV",
+    "linkedinProfile": "LinkedIn Profile",
+    "workExperience": "Work Experience",
+    "skills": "Technical Skills",
+    "portfolio": "Portfolio"
+  },
+  "travel": {
+    "title": "Travel Adventures",
+    "subtitle": "Exploring the world, one country at a time",
+    "countriesVisited": "Countries Visited",
+    "continents": "Continents",
+    "citiesExplored": "Cities Explored",
+    "milesTraveled": "Miles Traveled",
+    "myTravelMap": "My Travel Map",
+    "travelBlog": "Travel Blog",
+    "readMore": "Read More"
+  },
+  "personal": {
+    "title": "About Me",
+    "subtitle": "My hobbies, interests, and collections",
+    "boardGames": "Board Game Collection",
+    "readingList": "Reading List",
+    "instagramGallery": "Instagram Gallery",
+    "viewFullProfile": "View Full Profile"
+  },
+  "petsitting": {
+    "title": "Pet Sitting Services",
+    "subtitle": "Professional and loving care for your furry friends",
+    "services": "My Services",
+    "pricing": "Pricing",
+    "calendar": "Availability Calendar",
+    "bookNow": "Book Now",
+    "homeVisit": "Home Visit",
+    "overnightStay": "Overnight Stay",
+    "dogWalking": "Dog Walking",
+    "available": "Available",
+    "booked": "Booked",
+    "myClients": "Happy Clients",
+    "submitBooking": "Submit Booking Request"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "language": "Language"
+  },
+  "admin": {
+    "login": "Admin Login",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "managePosts": "Manage Posts",
+    "manageCalendar": "Manage Calendar",
+    "updateResume": "Update Resume"
+  }
+}

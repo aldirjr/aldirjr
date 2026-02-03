@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Início",
+    "professional": "Profissional",
+    "travel": "Viagens",
+    "personal": "Pessoal",
+    "petsitting": "Cuidado de Pets"
+  },
+  "home": {
+    "welcome": "Bem-vindo ao Meu Mundo",
+    "subtitle": "Desenvolvedor • Viajante • Entusiasta de Jogos de Tabuleiro • Cuidador de Pets"
+  },
+  "professional": {
+    "title": "Portfólio Profissional",
+    "subtitle": "Analista de Dados & Desenvolvedor Web",
+    "downloadCV": "Baixar Currículo",
+    "linkedinProfile": "Perfil LinkedIn",
+    "workExperience": "Experiência Profissional",
+    "skills": "Habilidades Técnicas",
+    "portfolio": "Portfólio"
+  },
+  "travel": {
+    "title": "Aventuras de Viagem",
+    "subtitle": "Explorando o mundo, um país de cada vez",
+    "countriesVisited": "Países Visitados",
+    "continents": "Continentes",
+    "citiesExplored": "Cidades Exploradas",
+    "milesTraveled": "Milhas Viajadas",
+    "myTravelMap": "Meu Mapa de Viagens",
+    "travelBlog": "Blog de Viagens",
+    "readMore": "Leia Mais"
+  },
+  "personal": {
+    "title": "Sobre Mim",
+    "subtitle": "Meus hobbies, interesses e coleções",
+    "boardGames": "Coleção de Jogos de Tabuleiro",
+    "readingList": "Lista de Leitura",
+    "instagramGallery": "Galeria do Instagram",
+    "viewFullProfile": "Ver Perfil Completo"
+  },
+  "petsitting": {
+    "title": "Serviços de Cuidado de Pets",
+    "subtitle": "Cuidado profissional e carinhoso para seus amigos peludos",
+    "services": "Meus Serviços",
+    "pricing": "Preços",
+    "calendar": "Calendário de Disponibilidade",
+    "bookNow": "Reserve Agora",
+    "homeVisit": "Visita em Casa",
+    "overnightStay": "Pernoite",
+    "dogWalking": "Passeio com Cachorro",
+    "available": "Disponível",
+    "booked": "Reservado",
+    "myClients": "Clientes Felizes",
+    "submitBooking": "Enviar Solicitação de Reserva"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "confirm": "Confirmar",
+    "language": "Idioma"
+  },
+  "admin": {
+    "login": "Login do Administrador",
+    "dashboard": "Painel",
+    "logout": "Sair",
+    "managePosts": "Gerenciar Posts",
+    "manageCalendar": "Gerenciar Calendário",
+    "updateResume": "Atualizar Currículo"
+  }
+}

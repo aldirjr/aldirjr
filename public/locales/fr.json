@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "professional": "Professionnel",
+    "travel": "Voyages",
+    "personal": "Personnel",
+    "petsitting": "Garde d'Animaux"
+  },
+  "home": {
+    "welcome": "Bienvenue dans Mon Monde",
+    "subtitle": "Développeur • Voyageur • Passionné de Jeux de Société • Gardien d'Animaux"
+  },
+  "professional": {
+    "title": "Portfolio Professionnel",
+    "subtitle": "Analyste de Données & Développeur Web",
+    "downloadCV": "Télécharger CV",
+    "linkedinProfile": "Profil LinkedIn",
+    "workExperience": "Expérience Professionnelle",
+    "skills": "Compétences Techniques",
+    "portfolio": "Portfolio"
+  },
+  "travel": {
+    "title": "Aventures de Voyage",
+    "subtitle": "Explorer le monde, un pays à la fois",
+    "countriesVisited": "Pays Visités",
+    "continents": "Continents",
+    "citiesExplored": "Villes Explorées",
+    "milesTraveled": "Miles Parcourus",
+    "myTravelMap": "Ma Carte de Voyage",
+    "travelBlog": "Blog de Voyage",
+    "readMore": "Lire Plus"
+  },
+  "personal": {
+    "title": "À Propos de Moi",
+    "subtitle": "Mes hobbies, intérêts et collections",
+    "boardGames": "Collection de Jeux de Société",
+    "readingList": "Liste de Lecture",
+    "instagramGallery": "Galerie Instagram",
+    "viewFullProfile": "Voir le Profil Complet"
+  },
+  "petsitting": {
+    "title": "Services de Garde d'Animaux",
+    "subtitle": "Soins professionnels et aimants pour vos amis à fourrure",
+    "services": "Mes Services",
+    "pricing": "Tarifs",
+    "calendar": "Calendrier de Disponibilité",
+    "bookNow": "Réserver Maintenant",
+    "homeVisit": "Visite à Domicile",
+    "overnightStay": "Séjour de Nuit",
+    "dogWalking": "Promenade de Chien",
+    "available": "Disponible",
+    "booked": "Réservé",
+    "myClients": "Clients Satisfaits",
+    "submitBooking": "Soumettre une Demande de Réservation"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "save": "Sauvegarder",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "confirm": "Confirmer",
+    "language": "Langue"
+  },
+  "admin": {
+    "login": "Connexion Administrateur",
+    "dashboard": "Tableau de Bord",
+    "logout": "Déconnexion",
+    "managePosts": "Gérer les Posts",
+    "manageCalendar": "Gérer le Calendrier",
+    "updateResume": "Mettre à Jour le CV"
+  }
+}

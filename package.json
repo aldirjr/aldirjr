@@ -1,0 +1,35 @@
+{
+  "name": "juniors-world",
+  "version": "1.0.0",
+  "description": "Junior's personal website with portfolio, travel blog, and pet sitting services",
+  "main": "api/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Build complete'",
+    "deploy": "vercel --prod",
+    "audit": "npm audit",
+    "audit:fix": "npm audit fix"
+  },
+  "keywords": [
+    "portfolio",
+    "travel",
+    "pet-sitting",
+    "mongodb",
+    "vercel"
+  ],
+  "author": "Junior",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie": "^1.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.12.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^5.5.28"
+  }
+}
