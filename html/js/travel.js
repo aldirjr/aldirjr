@@ -1,5 +1,17 @@
 // public/js/travel.js
 
+async function loadMapData() {
+    const response = await fetch('/api/travel');
+    const countries = await response.json();
+
+    countries.forEach(place => {
+        // Logic to add markers to your map (Leaflet)
+        L.marker([place.lat, place.lng])
+         .addTo(map)
+         .bindPopup(`<b>${place.name}</b><br>${place.year}`);
+    });
+}
+
 // Initialize map with better settings
 const map = L.map('map', {
     minZoom: 2,
@@ -294,7 +306,7 @@ Object.entries(visitedCountries).forEach(([country, data]) => {
     const marker = L.marker(data.coords, { icon: flagIcon }).addTo(map);
     
     marker.bindPopup(`
-        <div class="custom-popup" style="text-align: center;">
+        <div className="custom-popup" style="text-align: center;">
             <div style="font-size: 3rem; margin-bottom: 0.5rem;">${data.flag}</div>
             <h3 style="margin: 0.5rem 0;">${country}</h3>
             <p><strong>Visited:</strong> ${data.year}</p>

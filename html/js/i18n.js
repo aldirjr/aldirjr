@@ -107,25 +107,25 @@ class I18n {
         const switcher = document.createElement('li');
         switcher.className = 'nav-item dropdown language-switcher';
         switcher.innerHTML = `
-            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+            <a className="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fas fa-globe"></i> ${this.currentLang.toUpperCase()}
+                <i className="fas fa-globe"></i> ${this.currentLang.toUpperCase()}
             </a>
-            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <ul className="dropdown-menu" aria-labelledby="languageDropdown">
                 <li>
-                    <a class="dropdown-item lang-btn ${this.currentLang === 'en' ? 'active' : ''}" 
+                    <a className="dropdown-item lang-btn ${this.currentLang === 'en' ? 'active' : ''}" 
                        href="#" data-lang="en">
                         🇺🇸 English
                     </a>
                 </li>
                 <li>
-                    <a class="dropdown-item lang-btn ${this.currentLang === 'pt' ? 'active' : ''}" 
+                    <a className="dropdown-item lang-btn ${this.currentLang === 'pt' ? 'active' : ''}" 
                        href="#" data-lang="pt">
                         🇧🇷 Português
                     </a>
                 </li>
                 <li>
-                    <a class="dropdown-item lang-btn ${this.currentLang === 'fr' ? 'active' : ''}" 
+                    <a className="dropdown-item lang-btn ${this.currentLang === 'fr' ? 'active' : ''}" 
                        href="#" data-lang="fr">
                         🇫🇷 Français
                     </a>
@@ -144,7 +144,7 @@ class I18n {
                 
                 // Update dropdown button text
                 document.getElementById('languageDropdown').innerHTML = 
-                    `<i class="fas fa-globe"></i> ${lang.toUpperCase()}`;
+                    `<i className="fas fa-globe"></i> ${lang.toUpperCase()}`;
             });
         });
     }

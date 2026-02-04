@@ -41,31 +41,31 @@ class PetCalendar {
         
         // Calendar HTML structure
         this.container.innerHTML = `
-            <div class="calendar-widget">
-                <div class="calendar-header">
-                    <button class="calendar-nav" onclick="petCalendar.previousMonth()">
-                        <i class="fas fa-chevron-left"></i>
+            <div className="calendar-widget">
+                <div className="calendar-header">
+                    <button className="calendar-nav" onclick="petCalendar.previousMonth()">
+                        <i className="fas fa-chevron-left"></i>
                     </button>
-                    <h3 class="calendar-title">${monthNames[month]} ${year}</h3>
-                    <button class="calendar-nav" onclick="petCalendar.nextMonth()">
-                        <i class="fas fa-chevron-right"></i>
+                    <h3 className="calendar-title">${monthNames[month]} ${year}</h3>
+                    <button className="calendar-nav" onclick="petCalendar.nextMonth()">
+                        <i className="fas fa-chevron-right"></i>
                     </button>
                 </div>
-                <div class="calendar-grid">
+                <div className="calendar-grid">
                     ${this.renderDayHeaders()}
                     ${this.renderDays()}
                 </div>
-                <div class="calendar-legend">
-                    <div class="legend-item">
-                        <div class="legend-box available"></div>
+                <div className="calendar-legend">
+                    <div className="legend-item">
+                        <div className="legend-box available"></div>
                         <span data-i18n="petsitting.available">Available</span>
                     </div>
-                    <div class="legend-item">
-                        <div class="legend-box booked"></div>
+                    <div className="legend-item">
+                        <div className="legend-box booked"></div>
                         <span data-i18n="petsitting.booked">Booked</span>
                     </div>
-                    <div class="legend-item">
-                        <div class="legend-box today"></div>
+                    <div className="legend-item">
+                        <div className="legend-box today"></div>
                         <span>Today</span>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ class PetCalendar {
     renderDayHeaders() {
         const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         return days.map(day => 
-            `<div class="calendar-day-header">${day}</div>`
+            `<div className="calendar-day-header">${day}</div>`
         ).join('');
     }
 
@@ -99,7 +99,7 @@ class PetCalendar {
         
         // Add empty cells for days before month starts
         for (let i = 0; i < firstDay; i++) {
-            html += '<div class="calendar-day empty"></div>';
+            html += '<div className="calendar-day empty"></div>';
         }
         
         // Add days of the month
@@ -114,7 +114,7 @@ class PetCalendar {
             if (isAvailable === false) classes.push('booked');
             
             html += `
-                <div class="${classes.join(' ')}" data-date="${dateStr}">
+                <div className="${classes.join(' ')}" data-date="${dateStr}">
                     ${day}
                 </div>
             `;

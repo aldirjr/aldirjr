@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal - Junior's World</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="css/personal.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div className="container">
+            <a className="navbar-brand" href="index.html">Junior's <span style="color: #8e44ad;">World</span></a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul className="navbar-nav">
+                    <li className="nav-item"><a className="nav-link" href="/index">Home</a></li>
+                    <li className="nav-item"><a className="nav-link" href="/professional">Professional</a></li>
+                    <li className="nav-item"><a className="nav-link" href="/travel">Travel</a></li>
+                    <li className="nav-item"><a className="nav-link active" href="/">Personal</a></li>
+                    <li className="nav-item"><a className="nav-link" href="/petsitting">Pet Sitting</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div className="page-header">
+        <div className="container">
+            <h1><i className="fas fa-briefcase"></i> About Me</h1>
+            <p>My hobbies, interests and collections</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section className="about-section">
+        <div className="container">
+            <div className="about-card">
+                <div className="row align-items-center">
+                    <div className="col-lg-4">
+                        <div className="profile-photo">
+                            <i className="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div className="col-lg-8">
+                        <h2 className="mb-3">Hey, I'm Junior! 👋</h2>
+                        <p className="mb-3" style="font-size: 1.1rem; line-height: 1.8;">
+                            Welcome to my personal space! I'm a data analyst and web developer by day, and a passionate board game enthusiast, 
+                            bookworm, and pet lover by... well, also by day and night! I love exploring new places, trying new games, 
+                            and sharing my adventures on Instagram.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8;">
+                            When I'm not coding or analyzing data, you'll find me hosting game nights with friends, curled up with a good book, 
+                            or taking care of adorable pets. I believe life is about collecting experiences, not things (except for board games and books, of course! 😄).
+                        </p>
+                        
+                        <div className="social-links">
+                            <a href="https://instagram.com/juniorsfantasticworld" target="_blank" title="Instagram">
+                                <i className="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" target="_blank" title="LinkedIn">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" target="_blank" title="GitHub">
+                                <i className="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:contact@example.com" title="Email">
+                                <i className="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Gallery -->
+    <section className="instagram-section">
+        <div className="container">
+            <div className="text-center">
+                <h2 className="section-title">Instagram Gallery</h2>
+                <p className="section-subtitle">Follow my adventures @juniorsfantasticworld</p>
+            </div>
+            
+            <div className="instagram-grid">
+                <div className="instagram-item">
+                    <div className="instagram-placeholder">
+                        <i className="fas fa-camera"></i>
+                    </div>
+                </div>
+                <div className="instagram-item">
+                    <div className="instagram-placeholder">
+                        <i className="fas fa-mountain"></i>
+                    </div>
+                </div>
+                <div className="instagram-item">
+                    <div className="instagram-placeholder">
+                        <i className="fas fa-umbrella-beach"></i>
+                    </div>
+                </div>
+                <div className="instagram-item">
+                    <div className="instagram-placeholder">
+                        <i className="fas fa-city"></i>
+                    </div>
+                </div>
+                <div className="instagram-item">
+                    <div className="instagram-placeholder">
+                        <i className="fas fa-utensils"></i>
+                    </div>
+                </div>
+                <div className="instagram-item">
+                    <div className="instagram-placeholder">
+                        <i className="fas fa-plane"></i>
+                    </div>
+                </div>
+                <div className="instagram-item">
+                    <div className="instagram-placeholder">
+                        <i className="fas fa-coffee"></i>
+                    </div>
+                </div>
+                <div className="instagram-item">
+                    <div className="instagram-placeholder">
+                        <i className="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="instagram-link">
+                <a href="https://instagram.com/juniorsfantasticworld" target="_blank" className="btn-instagram">
+                    <i className="fab fa-instagram me-2"></i>View Full Profile
+                </a>
+            </div>
+            
+            <div className="alert alert-info mt-4 text-center">
+                <i className="fas fa-info-circle me-2"></i>
+                <strong>Note:</strong> To display real Instagram photos, you can integrate the Instagram API or manually update these placeholders with your photo URLs.
+            </div>
+        </div>
+    </section>
+
+    <!-- Board Games Section -->
+    <section className="boardgames-section">
+        <div className="container">
+            <div className="text-center">
+                <h2 className="section-title">🎲 Board Game Collection</h2>
+                <p className="section-subtitle">My collection from BoardGameGeek</p>
+            </div>
+            
+            <div className="collection-tabs">
+                <button className="tab-btn active" onclick="filterGames('all')">All Games</button>
+                <button className="tab-btn" onclick="filterGames('own')">Own</button>
+                <button className="tab-btn" onclick="filterGames('wishlist')">Wishlist</button>
+                <button className="tab-btn" onclick="filterGames('played')">Played</button>
+            </div>
+            
+            <div className="games-grid" id="gamesGrid">
+                <div className="game-card" data-status="own">
+                    <div className="game-image">
+                        <i className="fas fa-dice"></i>
+                    </div>
+                    <div className="game-content">
+                        <h3 className="game-title">Catan</h3>
+                        <div className="game-info">
+                            <span><i className="fas fa-users"></i> 3-4 Players</span>
+                            <span className="game-rating"><i className="fas fa-star"></i> 8.5/10</span>
+                        </div>
+                        <span className="game-status status-own">Own</span>
+                    </div>
+                </div>
+                
+                <div className="game-card" data-status="own">
+                    <div className="game-image">
+                        <i className="fas fa-chess-board"></i>
+                    </div>
+                    <div className="game-content">
+                        <h3 className="game-title">Ticket to Ride</h3>
+                        <div className="game-info">
+                            <span><i className="fas fa-users"></i> 2-5 Players</span>
+                            <span className="game-rating"><i className="fas fa-star"></i> 9.0/10</span>
+                        </div>
+                        <span className="game-status status-own">Own</span>
+                    </div>
+                </div>
+                
+                <div className="game-card" data-status="own">
+                    <div className="game-image">
+                        <i className="fas fa-landmark"></i>
+                    </div>
+                    <div className="game-content">
+                        <h3 className="game-title">7 Wonders</h3>
+                        <div className="game-info">
+                            <span><i className="fas fa-users"></i> 2-7 Players</span>
+                            <span className="game-rating"><i className="fas fa-star"></i> 8.8/10</span>
+                        </div>
+                        <span className="game-status status-own">Own</span>
+                    </div>
+                </div>
+                
+                <div className="game-card" data-status="wishlist">
+                    <div className="game-image">
+                        <i className="fas fa-dragon"></i>
+                    </div>
+                    <div className="game-content">
+                        <h3 className="game-title">Gloomhaven</h3>
+                        <div className="game-info">
+                            <span><i className="fas fa-users"></i> 1-4 Players</span>
+                            <span className="game-rating"><i className="fas fa-star"></i> 9.5/10</span>
+                        </div>
+                        <span className="game-status status-wishlist">Want to Buy</span>
+                    </div>
+                </div>
+                
+                <div className="game-card" data-status="wishlist">
+                    <div className="game-image">
+                        <i className="fas fa-tree"></i>
+                    </div>
+                    <div className="game-content">
+                        <h3 className="game-title">Wingspan</h3>
+                        <div className="game-info">
+                            <span><i className="fas fa-users"></i> 1-5 Players</span>
+                            <span className="game-rating"><i className="fas fa-star"></i> 9.2/10</span>
+                        </div>
+                        <span className="game-status status-wishlist">Want to Buy</span>
+                    </div>
+                </div>
+                
+                <div className="game-card" data-status="played">
+                    <div className="game-image">
+                        <i className="fas fa-mask"></i>
+                    </div>
+                    <div className="game-content">
+                        <h3 className="game-title">Pandemic</h3>
+                        <div className="game-info">
+                            <span><i className="fas fa-users"></i> 2-4 Players</span>
+                            <span className="game-rating"><i className="fas fa-star"></i> 8.7/10</span>
+                        </div>
+                        <span className="game-status status-played">Played</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="alert alert-info mt-4 text-center">
+                <i className="fas fa-info-circle me-2"></i>
+                <strong>Integration Tip:</strong> You can fetch your real collection using the BoardGameGeek XML API (https://boardgamegeek.com/wiki/page/BGG_XML_API2)
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section className="books-section">
+        <div className="container">
+            <div className="text-center">
+                <h2 className="section-title">📚 Reading List</h2>
+                <p className="section-subtitle">Books from my Goodreads profile</p>
+            </div>
+            
+            <div className="collection-tabs">
+                <button className="tab-btn active" onclick="filterBooks('all')">All Books</button>
+                <button className="tab-btn" onclick="filterBooks('read')">Read</button>
+                <button className="tab-btn" onclick="filterBooks('reading')">Currently Reading</button>
+                <button className="tab-btn" onclick="filterBooks('toread')">Want to Read</button>
+            </div>
+            
+            <div className="books-grid" id="booksGrid">
+                <div className="book-card" data-status="read">
+                    <div className="book-cover">
+                        <i className="fas fa-book"></i>
+                    </div>
+                    <div className="book-content">
+                        <h3 className="book-title">The Midnight Library</h3>
+                        <div className="book-author">by Matt Haig</div>
+                        <div className="game-info">
+                            <span className="game-rating"><i className="fas fa-star"></i> 5/5</span>
+                        </div>
+                        <span className="game-status status-played">Read</span>
+                    </div>
+                </div>
+                
+                <div className="book-card" data-status="reading">
+                    <div className="book-cover">
+                        <i className="fas fa-book-open"></i>
+                    </div>
+                    <div className="book-content">
+                        <h3 className="book-title">Project Hail Mary</h3>
+                        <div className="book-author">by Andy Weir</div>
+                        <div className="game-info">
+                            <span>Page 234 of 496</span>
+                        </div>
+                        <span className="game-status status-own">Currently Reading</span>
+                    </div>
+                </div>
+                
+                <div className="book-card" data-status="read">
+                    <div className="book-cover">
+                        <i className="fas fa-book"></i>
+                    </div>
+                    <div className="book-content">
+                        <h3 className="book-title">Atomic Habits</h3>
+                        <div className="book-author">by James Clear</div>
+                        <div className="game-info">
+                            <span className="game-rating"><i className="fas fa-star"></i> 4.5/5</span>
+                        </div>
+                        <span className="game-status status-played">Read</span>
+                    </div>
+                </div>
+                
+                <div className="book-card" data-status="toread">
+                    <div className="book-cover">
+                        <i className="fas fa-bookmark"></i>
+                    </div>
+                    <div className="book-content">
+                        <h3 className="book-title">The Thursday Murder Club</h3>
+                        <div className="book-author">by Richard Osman</div>
+                        <div className="game-info">
+                            <span>Mystery</span>
+                        </div>
+                        <span className="game-status status-wishlist">Want to Read</span>
+                    </div>
+                </div>
+                
+                <div className="book-card" data-status="read">
+                    <div className="book-cover">
+                        <i className="fas fa-book"></i>
+                    </div>
+                    <div className="book-content">
+                        <h3 className="book-title">Educated</h3>
+                        <div className="book-author">by Tara Westover</div>
+                        <div className="game-info">
+                            <span className="game-rating"><i className="fas fa-star"></i> 5/5</span>
+                        </div>
+                        <span className="game-status status-played">Read</span>
+                    </div>
+                </div>
+                
+                <div className="book-card" data-status="toread">
+                    <div className="book-cover">
+                        <i className="fas fa-bookmark"></i>
+                    </div>
+                    <div className="book-content">
+                        <h3 className="book-title">Circe</h3>
+                        <div className="book-author">by Madeline Miller</div>
+                        <div className="game-info">
+                            <span>Fantasy</span>
+                        </div>
+                        <span className="game-status status-wishlist">Want to Read</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="alert alert-info mt-4 text-center">
+                <i className="fas fa-info-circle me-2"></i>
+                <strong>Integration Tip:</strong> You can fetch your reading list using the Goodreads API or export your data as CSV
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section className="contact-section">
+        <div className="container">
+            <div className="text-center mb-4">
+                <h2 className="section-title">Get in Touch</h2>
+                <p className="section-subtitle">Feel free to reach out!</p>
+            </div>
+            
+            <div className="row">
+                <div className="col-md-4">
+                    <div className="contact-card">
+                        <div className="contact-item">
+                            <div className="contact-icon">
+                                <i className="fas fa-envelope"></i>
+                            </div>
+                            <h5>Email</h5>
+                            <p>contact@example.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div className="contact-card">
+                        <div className="contact-item">
+                            <div className="contact-icon">
+                                <i className="fab fa-instagram"></i>
+                            </div>
+                            <h5>Instagram</h5>
+                            <p>@juniorsfantasticworld</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div className="contact-card">
+                        <div className="contact-item">
+                            <div className="contact-icon">
+                                <i className="fab fa-linkedin"></i>
+                            </div>
+                            <h5>LinkedIn</h5>
+                            <p>linkedin.com/in/yourprofile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div className="container text-center">
+            <div className="footer-social mb-3">
+                <a href="https://instagram.com/juniorsfantasticworld" target="_blank"><i className="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/aldirjr" target="_blank"><i className="fab fa-linkedin"></i></a>
+                <a href="https://github.com/aldirjr" target="_blank"><i className="fab fa-github"></i></a>
+                <a href="#" id="email-link"><i className="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Junior's World. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- i18n (optional) -->
+    <script src="js/i18n.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Page specific JS -->
+    <script src="js/personal.js"></script>
+
+</body>
+</html>

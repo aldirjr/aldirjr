@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventures - Junior's World</title>
+    
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Leaflet CSS for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="css/travel.css">
+    
+</head>
+<body>
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div className="container">
+            <a className="navbar-brand" href="index.html">Junior's <span>World</span></a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul className="navbar-nav">
+                    <li className="nav-item"><a className="nav-link" href="/index">Home</a></li>
+                    <li className="nav-item"><a className="nav-link" href="/professional">Professional</a></li>
+                    <li className="nav-item"><a className="nav-link active" href="/">Travel</a></li>
+                    <li className="nav-item"><a className="nav-link" href="/personal">Personal</a></li>
+                    <li className="nav-item"><a className="nav-link" href="/petsitting">Pet Sitting</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div className="page-header">
+        <div className="container">
+            <h1><i className="fas fa-globe-americas"></i> Travel Adventures</h1>
+            <p>Exploring the world, one country at a time</p>
+        </div>
+    </div>
+
+    <section className="map-section">
+        <div className="container">
+            <div className="text-center">
+                <h2 className="section-title">My Travel Map</h2>
+                <p>Countries I've visited are marked on the map</p>
+            </div>
+            
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div className="container text-center">
+            <div className="footer-social mb-3">
+                <a href="https://instagram.com/juniorsfantasticworld" target="_blank"><i className="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/aldirjr" target="_blank"><i className="fab fa-linkedin"></i></a>
+                <a href="https://github.com/aldirjr" target="_blank"><i className="fab fa-github"></i></a>
+                <a href="#" id="email-link"><i className="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Junior's World. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- i18n (optional) -->
+    <script src="js/i18n.js"></script>
+    
+    <!-- Leaflet JS for map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Page specific JS -->
+    <script src="js/travel.js"></script>
+    
+</body>
+</html>
