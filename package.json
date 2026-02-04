@@ -24,12 +24,13 @@
   "author": "Junior",
   "license": "MIT",
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "bcryptjs": "^2.4.3",
     "cookie": "^1.1.1",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.12.0"
   },
   "devDependencies": {
-    "@vercel/node": "^5.5.28"
+    "@vercel/node": "^4.0.0"
   }
 }

@@ -19,6 +19,8 @@
     
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="css/personal.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     
 </head>
 <body>
@@ -160,106 +162,37 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-title">🎲 Board Game Collection</h2>
-                <p class="section-subtitle">My collection from BoardGameGeek</p>
+                <p class="section-subtitle">Live from my BoardGameGeek Profile</p>
             </div>
-            
-            <div class="collection-tabs">
-                <button class="tab-btn active" onclick="filterGames('all')">All Games</button>
-                <button class="tab-btn" onclick="filterGames('own')">Own</button>
-                <button class="tab-btn" onclick="filterGames('wishlist')">Wishlist</button>
-                <button class="tab-btn" onclick="filterGames('played')">Played</button>
+
+            <h3 class="mb-4"><i class="fas fa-history"></i> Recently Played</h3>
+            <div id="playedCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+                <div class="carousel-inner" id="played-carousel-content">
+                    <div class="text-center p-5"><div class="spinner-border text-primary"></div></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#playedCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#playedCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-            
-            <div class="games-grid" id="gamesGrid">
-                <div class="game-card" data-status="own">
-                    <div class="game-image">
-                        <i class="fas fa-dice"></i>
+
+            <h3 class="mb-4"><i class="fas fa-heart"></i> My Favorites</h3>
+            <div id="favsCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+                <div class="carousel-inner" id="favs-carousel-content">
                     </div>
-                    <div class="game-content">
-                        <h3 class="game-title">Catan</h3>
-                        <div class="game-info">
-                            <span><i class="fas fa-users"></i> 3-4 Players</span>
-                            <span class="game-rating"><i class="fas fa-star"></i> 8.5/10</span>
-                        </div>
-                        <span class="game-status status-own">Own</span>
-                    </div>
-                </div>
-                
-                <div class="game-card" data-status="own">
-                    <div class="game-image">
-                        <i class="fas fa-chess-board"></i>
-                    </div>
-                    <div class="game-content">
-                        <h3 class="game-title">Ticket to Ride</h3>
-                        <div class="game-info">
-                            <span><i class="fas fa-users"></i> 2-5 Players</span>
-                            <span class="game-rating"><i class="fas fa-star"></i> 9.0/10</span>
-                        </div>
-                        <span class="game-status status-own">Own</span>
-                    </div>
-                </div>
-                
-                <div class="game-card" data-status="own">
-                    <div class="game-image">
-                        <i class="fas fa-landmark"></i>
-                    </div>
-                    <div class="game-content">
-                        <h3 class="game-title">7 Wonders</h3>
-                        <div class="game-info">
-                            <span><i class="fas fa-users"></i> 2-7 Players</span>
-                            <span class="game-rating"><i class="fas fa-star"></i> 8.8/10</span>
-                        </div>
-                        <span class="game-status status-own">Own</span>
-                    </div>
-                </div>
-                
-                <div class="game-card" data-status="wishlist">
-                    <div class="game-image">
-                        <i class="fas fa-dragon"></i>
-                    </div>
-                    <div class="game-content">
-                        <h3 class="game-title">Gloomhaven</h3>
-                        <div class="game-info">
-                            <span><i class="fas fa-users"></i> 1-4 Players</span>
-                            <span class="game-rating"><i class="fas fa-star"></i> 9.5/10</span>
-                        </div>
-                        <span class="game-status status-wishlist">Want to Buy</span>
-                    </div>
-                </div>
-                
-                <div class="game-card" data-status="wishlist">
-                    <div class="game-image">
-                        <i class="fas fa-tree"></i>
-                    </div>
-                    <div class="game-content">
-                        <h3 class="game-title">Wingspan</h3>
-                        <div class="game-info">
-                            <span><i class="fas fa-users"></i> 1-5 Players</span>
-                            <span class="game-rating"><i class="fas fa-star"></i> 9.2/10</span>
-                        </div>
-                        <span class="game-status status-wishlist">Want to Buy</span>
-                    </div>
-                </div>
-                
-                <div class="game-card" data-status="played">
-                    <div class="game-image">
-                        <i class="fas fa-mask"></i>
-                    </div>
-                    <div class="game-content">
-                        <h3 class="game-title">Pandemic</h3>
-                        <div class="game-info">
-                            <span><i class="fas fa-users"></i> 2-4 Players</span>
-                            <span class="game-rating"><i class="fas fa-star"></i> 8.7/10</span>
-                        </div>
-                        <span class="game-status status-played">Played</span>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#favsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#favsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-            
-            <div class="alert alert-info mt-4 text-center">
-                <i class="fas fa-info-circle me-2"></i>
-                <strong>Integration Tip:</strong> You can fetch your real collection using the BoardGameGeek XML API (https://boardgamegeek.com/wiki/page/BGG_XML_API2)
-            </div>
+
+            <h3 class="mb-4"><i class="fas fa-gift"></i> Wishlist (Gift Ideas!)</h3>
+            <div class="games-grid" id="wishlistGrid">
+                </div>
         </div>
     </section>
 
